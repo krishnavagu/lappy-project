@@ -6,6 +6,7 @@ pipeline {
                 echo "This is my SCM Job"
                 git credentialsId: 'e059cf1e-0e5b-4ff3-b193-414652030158', url: 'https://github.com/krishnavagu/lappy-project.git'
             }
+        }
         stage('Build') { 
             steps {
                 echo "This is my Build Job"
